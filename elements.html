@@ -43,32 +43,65 @@
 				          		<span>or</span>
 				          	</p>
 			          	</div>
-									<form action="#" class="signup-form">
+									<form action="generic.html" class="signup-form" onsubmit="return validateFn()">
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group">
-							      			<label class="label" for="name">Full Name</label>
-							      			<input type="text" class="form-control">
+							      			<label class="label" for="name">First Name</label>
+							      			<input id="fname" type="text" class="form-control" onclick="resetmssg()">
+											  <small style="color: red;" >Error mssg</small>
 							      		</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
-							      			<label class="label" for="name">Username</label>
-							      			<input type="text" class="form-control">
+							      			<label class="label" for="name">Last Name</label>
+							      			<input  id="lname" type="text" class="form-control">
+											  <small style="color: red;">Error mssg </small>
 							      		</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
 							      			<label class="label" for="email">Email Address</label>
-							      			<input type="text" class="form-control">
+							      			<input id="email" type="text" class="form-control">
+											  <small style="color: red;">Error mssg </small>
 							      		</div>
 											</div>
+
+											
+
+											<div class="col-md-12">
+												<div class="form-group">
+						            	<label class="label" for="Mobile Number">Mobile Number</label>
+						              <input id="mob" type="text" class="form-control">
+									  <small id="mssg" style="color: red;">Error mssg </small>
+						            </div>
+											</div>
+
 											<div class="col-md-12">
 												<div class="form-group">
 						            	<label class="label" for="password">Password</label>
-						              <input type="password" class="form-control">
-						            </div>
-											</div>
+						              <input id="pass" onkeyup="trigger()" type="password" class="form-control">
+									  
+									  <span class="eye" onclick="myfn()">
+										<i id="hide1" class="icon ion-ios-eye"></i>
+										<i id="hide2" class="icon ion-ios-eye-off"></i>
+									  </span>
+									  <small style="color: red;">Error mssg </small>
+									  <div class="indicator">
+										<span class="weak"></span>
+										<span class="medium"></span>
+										<span class="strong"></span>
+									  </div>
+									  <div class="text">
+									  </div>
+									</div>
+
+
+								
+									
+
+
+
 											<div class="col-md-12 my-4">
 												<div class="form-group">
 						            	<div class="w-100">
@@ -106,6 +139,7 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="signup.js"></script>
 
 	</body>
 </html>
