@@ -8409,3 +8409,44 @@ background-size: 100% 100%;}
               color: #ffffff;
           }
           
+
+
+          .form-group i{
+            position: absolute;
+            transform: translateY(105%);
+            font-size: 25px;
+            color: #ffffff;
+            transition: all 0.5s;
+          }
+          
+          .form-group.success i{
+          color: #2ecc71;
+          position: absolute;
+            transform: translateY(105%);
+            font-size: 25px;
+          
+        }
+        .form-group.error i{
+          color: #e74c3c;
+          position: absolute;
+            transform: translateY(105%);
+            font-size: 25px;
+        }
+
+        .form-group small {
+          color: #e74c3c;
+          position: absolute;
+          margin-left: 30px;
+          bottom: 0;
+          left: 0;
+          visibility: hidden;
+          
+        }
+        
+        .form-group.error small {
+          visibility: visible;
+          transition: all 0.9s;
+        }
+
+
+        
